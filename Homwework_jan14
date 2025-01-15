@@ -1,0 +1,36 @@
+#1 Declare an empty list
+this_list = []
+print(this_list)
+#2 Declare a list with more than 5 items
+this_list = [1, 2, 3, 4, 5, 6]
+print(this_list)
+#3 Find the length of your list
+this_list = [1,2,3,4,5,6,7,8]
+list_length = len(this_list)
+print(list_length)
+#4 Get the first item, the middle item and the last item of the list
+#5 Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
+# Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
+#6 Print the list using print()
+#7 Print the number of companies in the list
+#8 Print the first, middle and last company
+#9 Print the list after modifying one of the companies
+#10 Add an IT company to it_companies
+#11 Insert an IT company in the middle of the companies list
+#12 Change one of the it_companies names to uppercase (IBM excluded!)
+#13 Join the it_companies with a string '#;  '
+#14 Check if a certain company exists in the it_companies list.
+#15 Sort the list using sort() method
+#16 Reverse the list in descending order using reverse() method
+#17 Slice out the first 3 companies from the list
+#18 Slice out the last 3 companies from the list
+#19 Slice out the middle IT company or companies from the list
+#20 Remove the first IT company from the list
+#21 Remove the middle IT company or companies from the list
+#22 Remove the last IT company from the list
+#23 Remove all IT companies from the list
+#24 Destroy the IT companies list
+#25 Join the following lists:
+#26 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+#27 back_end = ['Node','Express', 'MongoDB']
+#28 After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack, then insert Python and SQL after Redux.
