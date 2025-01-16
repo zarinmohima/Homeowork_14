@@ -9,29 +9,113 @@ this_list = [1,2,3,4,5,6,7,8]
 list_length = len(this_list)
 print(list_length)
 #4 Get the first item, the middle item and the last item of the list
+this_list = [1,2,3,4,5,6,7,8]
+first_item = this_list[0]
+middle_index = len(this_list) // 2
+middle_item = this_list [middle_index]
+last_item = this_list[-1]
+print("First item:", first_item)
+print("Middle item:", middle_item)
+print("Last item:", last_item)
 #5 Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
-# Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
-#6 Print the list using print()
+mixed_data_types = ["Zarin Mohima", 24, 5.6, "marries","New York"]
+print(mixed_data_types)
+#6 Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.7 Print the list using print()
+
+it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+print(it_companies)
 #7 Print the number of companies in the list
+print("Number of companies:",len(it_companies))
 #8 Print the first, middle and last company
+first_company = it_companies[0]
+middle_company = it_companies[len(it_companies) // 2]
+last_company = it_companies[-1]
+print("First company:", first_company)
+print("Middle company:", middle_company)
+print("Last company:", last_company)
 #9 Print the list after modifying one of the companies
+it_companies[3] = "Putu"
+print("Updated list:", it_companies)
 #10 Add an IT company to it_companies
+it_companies.append("Netflix")
+print("Updated list:", it_companies)
 #11 Insert an IT company in the middle of the companies list
+middle_index = len(it_companies) // 2
+it_companies.insert(middle_index, "Spotify")
+print("Updated list:", it_companies)
 #12 Change one of the it_companies names to uppercase (IBM excluded!)
+it_companies[1] = it_companies[1].upper()
+print("Updated list:", it_companies)
 #13 Join the it_companies with a string '#;  '
+joined_companies = '#;  '.join(it_companies)
+print("Joined list:", joined_companies)
 #14 Check if a certain company exists in the it_companies list.
+company_to_check = "Google"
+if company_to_check in it_companies:
+    print(f"{company_to_check} exists in the list.")
+else:
+    print(f"{company_to_check} does not exist in the list.")
 #15 Sort the list using sort() method
+it_companies.sort()
+print("Sorted list:", it_companies)
 #16 Reverse the list in descending order using reverse() method
+it_companies.sort()
+it_companies.reverse()
+print("Reversed list in descending order:", it_companies)
 #17 Slice out the first 3 companies from the list
+first_three_companies = it_companies[:3]
+print("First 3 companies:", first_three_companies)
 #18 Slice out the last 3 companies from the list
+last_three_companies = it_companies[-3:]
+print("Last 3 companies:", last_three_companies)
 #19 Slice out the middle IT company or companies from the list
+middle_index = len(it_companies) // 2
+
+if len(it_companies) % 2 == 1: 
+    middle_companies = it_companies[middle_index:middle_index+1]
+else:  
+    middle_companies = it_companies[middle_index-1:middle_index+1]
+
+print("Middle company(ies):", middle_companies)
+
 #20 Remove the first IT company from the list
+it_companies.pop(0) 
+print("Updated list:", it_companies)
 #21 Remove the middle IT company or companies from the list
+if len(it_companies) % 2 == 1:  
+    it_companies.pop(middle_index)
+else:
+    it_companies.pop(middle_index)  
+    it_companies.pop(middle_index - 1)  
+
+print("Updated list:", it_companies)
 #22 Remove the last IT company from the list
+it_companies.pop()
+print("Updated list:", it_companies)
 #23 Remove all IT companies from the list
+it_companies.clear()
+print("Updated list:", it_companies)
 #24 Destroy the IT companies list
-#25 Join the following lists:
-#26 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-#27 back_end = ['Node','Express', 'MongoDB']
-#28 After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack, then insert Python and SQL after Redux.
-#############
+del it_companies
+try:
+    print(it_companies)
+except NameError:
+    print("The list has been destroyed.")
+#25 Join the following lists: front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node.js', 'Express', 'MongoDB']
+full_stack = front_end + back_end
+print("Full stack:", full_stack)
+
+#26 back_end = ['Node','Express', 'MongoDB']
+full_stack = front_end + back_end
+
+# Print the joined list
+print("Full stack:", full_stack)
+#26 After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack, then insert Python and SQL after Redux.
+full_stack = front_end + back_end
+full_stack_copy = full_stack.copy()
+redux_index = full_stack_copy.index('Redux')  
+full_stack_copy.insert(redux_index + 1, 'Python') 
+full_stack_copy.insert(redux_index + 2, 'SQL') 
+print("Updated full stack:", full_stack_copy)
