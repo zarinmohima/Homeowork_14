@@ -174,4 +174,57 @@ print(f"Set after adding multiple companies: {it_companies}")
 it_companies = {"Google", "Amazon", "Facebook"}
 it_companies.discard("Twitter")  
 print(it_companies)
-it_companies.remove("Twitter")
+
+#1 
+dog = {}
+dog["name"] = "Buddy"
+dog["color"] = "Brown"
+dog["breed"] = "Labrador"
+dog["legs"] = 4
+dog["age"] = 3
+print(f"Dog dictionary: {dog}")
+ 
+ #2 
+student = {
+    "first_name": "Zarin",
+    "last_name": "Mohima",
+    "gender": "Female",
+    "age": 24,
+    "marital_status": "Married",
+    "skills": ["Python", "Data Analysis"],
+    "country": "USA",
+    "city": "New York",
+    "address": "16410 84th Ave",
+}
+
+print(student)
+
+#3 
+student_length = len(student)
+print(f"The length of the student dictionary is: {student_length}")
+#4 
+skills_value = student["skills"]
+print(f"Skills value: {skills_value}")
+print(f"Data type of skills: {type(skills_value)}")
+#5 
+student["skills"].extend(["Machine Learning", "AI"])
+print(f"Updated skills: {student['skills']}")
+
+# 6. Get the dictionary keys as a list
+keys_list = list(student.keys())
+print(f"Dictionary keys as a list: {keys_list}")
+
+# 7. Get the dictionary values as a list
+values_list = list(student.values())
+print(f"Dictionary values as a list: {values_list}")
+
+# 8. Change the dictionary to a list of tuples using items() method
+items_list = list(student.items())
+print(f"Dictionary as a list of tuples: {items_list}")
+
+# 9. Delete one of the items in the dictionary
+del student["address"]
+print(f"Dictionary after deleting 'address': {student}")
+
+# 10. Delete the entire dictionary
+del student
