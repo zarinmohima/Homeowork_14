@@ -119,3 +119,59 @@ redux_index = full_stack_copy.index('Redux')
 full_stack_copy.insert(redux_index + 1, 'Python') 
 full_stack_copy.insert(redux_index + 2, 'SQL') 
 print("Updated full stack:", full_stack_copy)
+
+# Day 06 
+
+#1. Create an empty tuple
+empty_tuple = tuple()
+print(empty_tuple)
+#2. Create a tuple containing names of your sisters and your brothers (imaginary siblings are fine)
+siblings = ("SM", "Maimuna",)
+print (siblings)
+#3. Join brothers and sisters tuples and assign it to siblings
+brothers = ("SM")
+sisters = ("Maimuna")
+siblings = brothers + sisters
+print(siblings)
+
+#4. How many siblings do you have?
+siblings = ("SM","Maimuna")
+print(f"I have {len(siblings)} siblings.")
+
+#5. Modify the siblings tuple and add the name of your father and mother and assign it to family_members
+siblings = ("SM", "Maimuna")
+parents = ("MD", "Mashuma")
+family_members = siblings + parents
+print(family_members)
+
+#Day 07
+#1. Find the length of the set it_companies
+it_companies = {"Google", "Amazon", "Facebook", "Apple", "Microsoft"}
+print(f"Length of the set: {len(it_companies)}")
+
+#2. Add 'Twitter' to it_companies
+it_companies.add("Twitter")
+print(f"Set after adding 'Twitter': {it_companies}")
+#3. Insert multiple IT companies at once to the set it_companies
+it_companies.update({"IBM", "Oracle", "Salesforce"})
+print(f"Set after adding multiple companies: {it_companies}")
+#4. Remove one of the companies from the set it_companies
+it_companies.update({"IBM", "Oracle", "Salesforce"})
+print(f"Set after adding multiple companies: {it_companies}")
+#5. What is the difference between remove and discard
+it_companies.remove("Facebook")  # Removing 'Facebook'
+print(f"Set after removing 'Facebook': {it_companies}")
+
+#Day 08 
+#1. Insert multiple IT companies at once to the set it_companies
+it_companies = {"Google", "Amazon", "Facebook", "Apple", "Microsoft"}
+print(it_companies)
+#2. Remove one of the companies from the set it_companies
+it_companies.update({"IBM", "Oracle", "Salesforce"})
+print(it_companies)
+print(f"Set after adding multiple companies: {it_companies}")
+#3. What is the difference between remove and discard
+it_companies = {"Google", "Amazon", "Facebook"}
+it_companies.discard("Twitter")  
+print(it_companies)
+it_companies.remove("Twitter")
